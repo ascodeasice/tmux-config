@@ -1,7 +1,6 @@
 #!/bin/bash
 
-current_session_name=$(tmux display-message -p '#S')
-session_name="floating_${current_session_name}"
+session_name="floating_window"
 default_dir="$HOME/Downloads"
 
 if tmux has-session -t "$session_name" 2>/dev/null; then
